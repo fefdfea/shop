@@ -1,0 +1,114 @@
+@import './_reset.css';
+
+.mypage-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0.7em;
+}
+
+
+.orderState{
+  display: flex;
+  margin-top: 3em;
+}
+
+.orderState > div{
+  width: 33.3333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: dimgrey;
+  font-size: 1.3rem;
+  padding: 1em 0;
+}
+
+.orderState > div:last-child{
+  justify-content: center;
+}
+
+.orderState > div > span{
+  padding-top: 0.3em;
+}
+
+.page_list{
+  list-style:inside;
+  font-size: 0.9rem;
+}
+
+.mypageOrderList > h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1em;
+}
+
+.mypageOrderList table{
+  text-align: center;
+  margin-top: 2.4em;
+}
+
+.mypageOrderList td{
+  vertical-align: middle;
+  padding: 30px;
+}
+
+.mypageOrderList .deleteBtn{
+  border: 0;
+  background-color: transparent;
+}
+
+.mg_imgBx{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.mg_imgBx > img{
+	width: 100%;
+	height: 100%;
+}
+
+.mg_background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(255,255,255,0.4);
+}
+
+.mg_conFirm{
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:palegreen;
+}
+
+.cf_btnArea{
+  display: flex;
+  margin-top: 2em;
+}
+
+.cf_btnArea > button{
+  border: 0;
+  padding: 10px;
+  background-color: rgba(255,255,255,1);
+  margin-left: 1em;
+}
+
+.cf_btnArea > button:nth-of-type(1){
+  margin-left: 0;
+}

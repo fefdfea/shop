@@ -1,0 +1,77 @@
+@import './_reset.css';
+.login_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4em;
+  font-size:  2rem;
+  font-weight: bold;
+}
+
+.loginInput{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  font-size: 0.8em;
+  padding: 5px 0;
+  margin: 1em auto;
+}
+
+
+.loginInput:nth-of-type(2){
+  margin-bottom: 1.6em;
+}
+
+.loginInput::placeholder{
+  font-size: 0.8rem;
+}
+
+.button{
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 2em;
+  background: #fff;
+  font-weight: bold;
+}
+
+.button a{
+  display: block;
+}
+
+.button:last-child{
+  margin: 0;
+}
+
+.button:hover{
+  background: black;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.button:hover a{
+  color: #fff;
+  transition: 0.5s;
+}
+
+.signInForm{
+  width: 100%;
+}
+
+@media screen and (max-width:768px){
+  .loginInput{
+    width: 100%;
+  }
+
+  .button{
+    width: 120px;
+    height: 46px;
+    padding: 9px 8px;
+    font-size: 1rem;
+    margin-right: 1em;
+  }
+
+}

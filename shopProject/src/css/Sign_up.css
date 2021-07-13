@@ -1,0 +1,102 @@
+@import './_reset.css';
+.join{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2em;
+  padding-right: 1em;
+}
+
+.form-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.desc ul li{
+  margin-top: 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-area > .button{
+  padding: 10px 20px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 4em;
+}
+
+.btn-area > .button:last-child{
+  margin-right: 0;
+}
+
+.btn-area > .button:hover{
+  background: black;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.input ul li{
+  margin-top: 1.2em;
+}
+
+.input ul li input{
+  display: inline-block;
+  width: 462px;
+  padding: 12px 0;
+}
+
+
+
+.btn-area{
+  text-align: center;
+  margin-top: 3em;
+}
+
+::placeholder {
+  color: black;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 768px){
+
+  .join{
+    padding-right: 0em;
+  }
+
+  .form-container{
+    display: block;
+  }
+  .desc ul li{
+    font-size: 0.8rem;
+    margin-top: 3.2em;
+  }
+
+  .desc ul li:first-child{
+    margin-top: 2.6em;
+  }
+
+  .input{
+    margin-left: 0em;
+  }
+
+  .input > ul > li > input{
+    width: 100%;
+  }
+
+
+
+  .phone::placeholder{
+    font-size: 0.3rem;
+  }
+
+  .btn-area > .button{
+    width: 120px;
+    height: 46px;
+    font-size: 1rem;
+    margin-right: 0em;
+  }
+}

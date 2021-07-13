@@ -1,0 +1,75 @@
+header h1{
+  font-size: 2.9rem;
+  margin-top: 0.8em;
+}
+
+.top_list{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top_list li{
+  position: relative;
+  font-size: 0.9rem;
+  margin-left: 1.2em;
+  animation: rightAni 0.5s ease forwards;
+  opacity: 0;
+}
+
+.top_list li:nth-of-type(1){
+  animation-delay: 0.2s;
+}
+
+.top_list li:nth-of-type(2){
+  animation-delay: 0.4s;
+}
+
+.top_list li:nth-of-type(3){
+  animation-delay: 0.6s;
+}
+
+.top_list li:nth-of-type(4){
+  animation-delay: 0.8s; 
+}
+.top_list li:nth-of-type(5){
+  animation-delay: 1s; 
+}
+
+.top_list li a:hover{
+  color: #999;
+}
+
+.top_list li .productCount{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .top_list{
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .top_list li{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.2em;
+    border: 1px solid #999;
+  }
+
+
+  .top_list li .productCount{
+    display: none;
+  }
+}

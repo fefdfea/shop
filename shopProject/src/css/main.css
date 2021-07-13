@@ -1,0 +1,223 @@
+@import './_reset.css';
+
+.best{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.best h2{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.best p{
+  font-size: 1.5rem;
+}
+
+.best_product{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.best_product .best{
+  width: 33.333%;
+  height: 200px;
+}
+
+.best_product .best img{
+  object-fit: contain;
+}
+
+.best_keywords{
+  width: 100%;
+  background-color: rgba(150,150,150,0.1);
+  text-align: center;
+  padding-bottom: 3em;
+  margin-top: 1em;
+}
+
+.best_keywords h2{
+  padding-top: 2.4em;
+  font-size: 2.5rem;
+}
+
+.keywords{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+}
+
+.best_keywords > .keywords >  .trand_keywords{
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 1em;
+}
+
+.best_keywords a:nth-of-type(1){
+  margin-left: 0;
+}
+
+
+.trend_product{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2em;
+  padding: 0 6em;
+}
+
+.trend_product > a{
+  width: 25%;
+}
+
+.trend_product > a img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.trend_product > a:nth-of-type(1){
+  margin-left: 0;
+}
+
+.title_last{
+  text-align: center;
+  font-size: 3.4rem;
+  margin-top: 2em;
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-bx{
+  width: 33.3333%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y:hidden
+}
+
+.hoverBox{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  line-height: 1.6;
+  transform: translate3d(0,100%,0);
+}
+
+.hoverBox > p > span{
+  font-size: 0.8rem;
+}
+
+.item-bx:hover .hoverBox{
+  opacity: 1;
+  background-color:rgba(255,255,255,0.9);
+  transform: translate3d(0,0%,0);
+  transition: 0.3s;
+}
+
+.desc_text{
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.more{
+  text-align: center;
+  margin-top: 3em;
+}
+
+.more_btn{
+  width: 160px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.more_btn:hover{
+  background-color: black;
+  color: #fff;
+  transition: 0.5s;
+}
+
+@keyframes rightAni{
+  0%{
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate3d(0%,0,0);
+  }
+}
+
+@media screen and (max-width:1080px){
+  .trend_product{
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width:768px){
+  header h1{
+    display: none;
+  }
+
+  .top_list{
+    justify-content: center;
+  }
+
+  .best_product .best{
+    width: 50%;
+  }
+
+  .top_nav{
+    margin-top: 4em;
+  }
+
+  .item-bx{
+    width: 50%;
+  }
+}
+
+  
+  @media screen and (max-width:576px){
+    .best_keywords > .keywords{
+      flex-wrap: wrap;
+    }
+    .best_keywords > .keywords >  a{
+      width: 100%;
+    }
+    .all a{
+      width: 100%;
+    }
+    .all a:nth-of-type(1){
+      margin-top: 1.5em;
+    }
+    .best_keywords > .keywords > a{
+      margin-left: 0;
+    }
+    .trend_product > a{
+      width: 50%;
+    }
+
+    .best_keywords > .keywords > .trand_keywords{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
